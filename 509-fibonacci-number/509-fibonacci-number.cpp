@@ -1,7 +1,7 @@
 class Solution {
 public:
     int fib(int n) {
-        int memo[100];
+        int memo[31];
       	memset(memo, -1, sizeof(memo));
        
             if(memo[n]==-1)
