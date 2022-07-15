@@ -1,9 +1,9 @@
 class Solution {
 public:
-    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+    int canCompleteCircuit(vector<int>& petrol, vector<int>& dist) {
         int curr_pet=0, prev_pet=0, start=0,count;
-        for(int i=0; i<gas.size(); i++)
-        {curr_pet+=gas[i]-cost[i];
+        for(int i=0; i<petrol.size(); i++)
+        {curr_pet+=petrol[i]-dist[i];
             if(curr_pet<0)
             { start=i+1;
             prev_pet+=curr_pet;
