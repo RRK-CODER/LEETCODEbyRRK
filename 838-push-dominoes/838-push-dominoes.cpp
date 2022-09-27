@@ -7,6 +7,7 @@ public:
             if(d[j]=='.')
                 continue;
             int middle=j-i-1;
+            //middle is actually the length of the middle part
             if(i>0)
                 res+=d[i];
             if(d[i]==d[j])
